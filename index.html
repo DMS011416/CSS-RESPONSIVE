@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <header>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+                <li><a href="#">LUFFY</a></li>
+                <li><a href="#">ZORO</a></li>
+                <li><a href="#">SANJI</a></li>
+                <li><a href="#">JIMBEI</a></li>
+                <li><a href="#">BROOK</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">STRAWHAT PIRATES</a></li>
+                <li class="hideOnMobile"><a href="#">Luffy</a></li>
+                <li class="hideOnMobile"><a href="#">Zoro</a></li>
+                <li class="hideOnMobile"><a href="#">Sanji</a></li>
+                <li class="hideOnMobile"><a href="#">Jimbei</a></li>
+                <li class="hideOnMobile"><a href="#">Brook</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </a></li>
+            </ul>      
+        </nav>
+    </header>
+    <div class="image-container">
+        <img src="Luffy.jpg" alt="Strawhat Pirates" width="290" height="290">
+        <h5>Luffy the Captain</h5>
+        <p> Luffy, the Captain of the Strawhat Pirates,
+                Luffy, is a brave and strong captain.
+                Luffy is already one of the 4 Emperors of the Sea in New World.
+                He aims to be the "King of the Pirates"
+                He is the kind of captain that cares for is crewmates,
+                that saves and defends them from their enemies.
+        </p>
+        <img src="Zoro.jpg" alt="Strawhat Pirates" width="290" height="290">
+        <h5>Zoro the Swordsman</h5>
+        <p> Zoro, is the Swordsman of the Strawhat Pirates,
+                Zoro, is a disciplined and strong swordsman.
+                Zoro aims to beat Hawkeye Mihawk in a duel to be the "World's Strongest Swordsman"
+                He also cares for his crewmates, but for his enemies,
+                he is one to be feared.
+        </p>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <footer> Santos, Donyell Mays O.
+             BSIT-1C
+    </footer>
+</html>
